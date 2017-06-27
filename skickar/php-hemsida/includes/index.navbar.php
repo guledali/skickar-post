@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="flex-sm-fill text-sm-center nav-link text-info" href="contact.php">Kontakt</a>
                 </li>
+                 <li class="nav-item">
+                    <a class="flex-sm-fill text-sm-center nav-link text-warning" href="login.php">Login</a>
+                 </li>
             </ul>
         </div>
 

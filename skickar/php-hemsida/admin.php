@@ -90,7 +90,7 @@
             aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
     <span class='navbar-toggler-icon'></span>
   </button>
-        <a class='navbar-brand' href='index.html'><img src='public/assets/img/logo.png' width='30' height='30' alt=''>
+        <a class='navbar-brand' href='index.php'><img src='public/assets/img/logo.png' width='30' height='30' alt=''>
   </a>
 
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>

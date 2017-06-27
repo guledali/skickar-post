@@ -90,7 +90,7 @@
             aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
     <span class='navbar-toggler-icon'></span>
   </button>
-        <a class='navbar-brand' href='index.html'><img src='public/assets/img/logo.png' width='30' height='30' alt=''>
+        <a class='navbar-brand' href='index.php'><img src='public/assets/img/logo.png' width='30' height='30' alt=''>
   </a>
 
         <div class='collapse navbar-collapse' id='navbarSupportedContent'>
@@ -103,6 +103,9 @@
                     <li class='nav-item'>
                         <a class='flex-sm-fill text-sm-center nav-link text-info' href='contact.php'>Contact</a>
                     </li>
+                    <li class='nav-item'>
+                        <a class='flex-sm-fill text-sm-center nav-link active link' href='login.php'>Login</a>
+                    </li>
                 </ul>
             </div>
 
@@ -111,11 +114,37 @@
 
 
 <?php 
+
+           $db = mysqli_connect("localhost", "root","", "php-hemsida");
+           mysqli_query($db, "SET NAMES utf8");
+
+                  	if(isset($_POST['send_form'])) {
+               foreach($_POST as $k => $v){
+                   $clean[$k] = mysqli_real_escape_string($db, $v);
+               }
+
+               $content = $clean['content'];
+
+               $query = "
+                   INSERT INTO page (content)
+                   VALUES ('$content')
+               ";
+
+               mysqli_query($db, $query);
+
+               if(mysqli_query($db, $query)) {
+                   echo "<h4 class='ml-5 text-info'>Ditt cv har ändrats</h4>";
+               }else{
+                   echo "<p>Något har gått fel</p>";
+               }
+           }
+
+
         if(isset($_SESSION['admin']) && $_SESSION['admin']) {
                 echo "    <form method='post' action=''>
         <div class='form-group'>
             <label for='exampleTextarea'></label>
-            <textarea class='form-control' id='exampleTextarea' rows='30'><section class='mt-5'>
+            <textarea name='content' class='form-control' id='exampleTextarea' rows='30'><section class='mt-5'>
                 <div class='container'>
             <div class='accordion'>
                 <ul class='list-unstyled'>
