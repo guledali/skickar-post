@@ -125,10 +125,7 @@
 
                $content = $clean['content'];
 
-               $query = "
-                   INSERT INTO page (content)
-                   VALUES ('$content')
-               ";
+               $query = " UPDATE page SET content ='$content'";
 
                mysqli_query($db, $query);
 
