@@ -12,6 +12,11 @@
     <!-- Hangman CSS -->
     <link rel="stylesheet" href="public/assets/css/hangman.css">
 
+    <!-- Favicon -->
+    <link rel="icon" href="public/assets/img/favicon.ico" type="image/ico" sizes="16x16">
+
+    <!-- Title of the webpage -->
+    <title>Info</title>
 
      <!-- Custom stylesheet -->
     <link rel="stylesheet" href="public/assets/css/stylesheet.css">

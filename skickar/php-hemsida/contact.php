@@ -8,6 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='bootstrap/dist/css/bootstrap.min.css'>
+
+    <!-- Favicon -->
+    <link rel="icon" href="public/assets/img/favicon.ico" type="image/ico" sizes="16x16">
+
+    <!-- Title of the webpage-->
+    <title>Kontakt</title>
     
     <!-- Custom stylesheet -->
     <link rel='stylesheet' href='public/assets/css/stylesheet.css'>

@@ -17,6 +17,10 @@
 
     questions.forEach(question => question.addEventListener('click', toggleAccordion));*/
 
+    
+
+/* ===================================== JQuery refaktorering =================================== */
+
 $('.js-question-wrapper').on('click', function(){
   $('.js-question-wrapper').each(function(){
     $('.js-question-wrapper').removeClass('open');

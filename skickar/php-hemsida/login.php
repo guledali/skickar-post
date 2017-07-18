@@ -14,8 +14,12 @@
 
     <!-- Custom stylesheet -->
     <link rel='stylesheet' href='public/assets/css/stylesheet.css'>
-    <!--Specific page styling-->
 
+    <!-- Favicon -->
+    <link rel="icon" href="public/assets/img/favicon.ico" type="image/ico" sizes="16x16">
+
+    <!-- Title of the webpage-->
+    <title>Login</title>
 
     <!--Specific page styling-->
     <style>
